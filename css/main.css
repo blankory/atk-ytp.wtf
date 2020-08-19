@@ -10,16 +10,18 @@ html, body {
 	.liquid-bg1 {
 		background-image: none;
 	}
+	#team {font-size: 0.95rem;}
 }
 
 @media screen and (max-width: 700px) {
-	#team {
-		font-size: 0.9rem;
-	}	
 	#logo {
 		max-width: 75% !important;
 	}
 }
+
+@media screen and (max-width: 650px) {#team {font-size: 0.75rem;}}
+@media screen and (max-width: 500px) {#team {font-size: 0.6rem;}}
+
 .mb-6 {
 	margin-bottom: 5rem;
 }
