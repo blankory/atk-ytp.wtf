@@ -159,3 +159,7 @@ ul {
 	background-color: #df6dbf;
 	text-align: center;
 }
+
+#footer_logo {
+	max-width: 350px;
+}
