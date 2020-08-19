@@ -1,3 +1,4 @@
+
 html, body {
 	color: #e7e7e7;
 	font-family: 'Montserrat', sans-serif;
@@ -5,6 +6,20 @@ html, body {
 	scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 992px) {
+	.liquid-bg1 {
+		background-image: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#team {
+		font-size: 0.9rem;
+	}	
+	#logo {
+		max-width: 75% !important;
+	}
+}
 .mb-6 {
 	margin-bottom: 5rem;
 }
@@ -18,13 +33,12 @@ ul {
 	list-style: none;
 }
 
-
 .parallax {
 	height: 58%;
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin: 0%;
 	padding: 0%;
 	text-align: center;
@@ -48,27 +62,23 @@ ul {
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 	font-weight: 600;
 }
 
 .topnav a:hover {
-  background-color: #E269A7;
-  color: white;
+	background-color: #E269A7;
+	color: white;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.nav-item {
-
+	background-color: #4CAF50;
+	color: white;
 }
 
 .liquid-bg1 {
@@ -77,13 +87,6 @@ ul {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-
-@media screen and (max-width: 992px) {
-	.liquid-bg1 {
-		background-image: none;
-	}
-}
-
 .transition {
 	min-width: 100%;
 	position: relative;
