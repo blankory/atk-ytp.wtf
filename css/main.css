@@ -132,6 +132,10 @@ ul {
 	background-color: #df6dbf;
 }
 
+#sponsors img {
+	padding: 0.75rem 0;
+}
+
 .Bsponsor {
 	max-height: 100px;
 	width: auto;
