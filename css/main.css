@@ -22,6 +22,10 @@ html, body {
 @media screen and (max-width: 650px) {#team {font-size: 0.75rem;}}
 @media screen and (max-width: 500px) {#team {font-size: 0.6rem;}}
 
+h1 {
+	margin-bottom: 0.5rem;
+}
+
 .mb-6 {
 	margin-bottom: 5rem;
 }
@@ -98,6 +102,10 @@ ul {
 	text-align: center;
 }
 
+#sponsors {
+	margin-bottom: 32px;
+}
+
 .container-fluid {
 	background-image: url("../img/transition.png");
 	min-height: 10vh;
@@ -115,8 +123,7 @@ ul {
 
 
 .container {
-	padding: 64px 32px 64px;
-	margin-bottom: 32px;
+	padding: 32px 0 32px 0;
 	text-align: center;
 }
 
