@@ -131,6 +131,35 @@ ul {
 	background-color: #df6dbf;
 }
 
+.timetable-container {
+	margin-bottom: 4rem;
+	background-color: #df6dbf;
+}
+
+.timetable {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: solid 1px black;
+}
+
+th, td {
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+}
+
+.timetable tbody:first-of-type {
+	border-top: solid 1px black;
+}
+
+.timetable th:first-of-type,
+.timetable td:first-of-type {
+	text-align: right;
+	font-weight: 700;
+	padding-right: 3rem;
+	width: 20%;
+}
+
 #sponsors img {
 	padding: 0.75rem 0;
 }
@@ -162,7 +191,6 @@ ul {
 #footer_logo {
 	max-width: 350px;
 }
-
 
 
 .k {
