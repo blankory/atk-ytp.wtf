@@ -189,3 +189,28 @@ ul {
     50%{background-position:100% 91%}
     100%{background-position:0% 10%}
 }
+
+body {
+    background: linear-gradient(134deg, #000000, #111010, #2b2a2a, #111010, #000000);
+    background-size: 5000% 5000%;
+
+    -webkit-animation: darkGradient 51s ease infinite;
+    -moz-animation: darkGradient 51s ease infinite;
+    animation: darkGradient 51s ease infinite;
+}
+
+@-webkit-keyframes darkGradient {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@-moz-keyframes darkGradient {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes darkGradient {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
