@@ -162,3 +162,30 @@ ul {
 #footer_logo {
 	max-width: 350px;
 }
+
+
+
+.k {
+    background: linear-gradient(156deg, #74d6bd, #d6749c, #7d74d6, #6af815, #000000, #00d3fe);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
