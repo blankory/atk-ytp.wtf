@@ -1,4 +1,4 @@
-function onKonamiCode(cb) {
+function vimmiaHuikka(cb) {
   var input = '';
   var key = '38384040373937396665';
   document.addEventListener('keydown', function (e) {
@@ -12,7 +12,7 @@ function onKonamiCode(cb) {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-	onKonamiCode(function () {document.body.classList.add("k");})
+	vimmiaHuikka(function () {document.body.classList.add("k");})
 });
 
 
