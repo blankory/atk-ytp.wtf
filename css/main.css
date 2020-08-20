@@ -135,6 +135,11 @@ ul {
 	padding: 0.75rem 0;
 }
 
+.a-sponsor {
+	max-height: 120px;
+	width: auto;
+}
+
 .b-sponsor {
 	max-height: 100px;
 	width: auto;
