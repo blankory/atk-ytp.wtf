@@ -19,7 +19,17 @@ html, body {
 	}
 }
 
-@media screen and (max-width: 650px) {#team {font-size: 0.75rem;}}
+@media screen and (max-width: 650px) {
+	#team {font-size: 0.75rem;}
+	.glitch {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.glitch {
+		font-size: 30px;
+	}
+}
 
 h1 {
 	margin-bottom: 0.75rem;
@@ -60,10 +70,16 @@ ul {
 }
 
 .topnav {
-	position: fixed;
-	overflow: hidden;
-	z-index: 100;
 	background-color: #4056A6;
+	color: #FFF;
+	z-index:100;
+}
+.topnav .navbar-toggler {
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255,255,255,.5);
+}
+.topnav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .topnav a {
@@ -76,12 +92,21 @@ ul {
 	font-weight: 600;
 }
 
+@media screen and (max-width:992px) {
+	.topnav a {
+		width: 100%;
+		text-align: left;
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+}
+
 .topnav a:hover {
 	background-color: #E269A7;
 	color: white;
 }
 
-.topnav a.active {
+.topnav .active a {
 	background-color: #4CAF50;
 	color: white;
 }
@@ -164,6 +189,11 @@ th, td {
 	padding: 0.75rem 0;
 }
 
+.a-sponsor {
+	max-height: 120px;
+	width: auto;
+}
+
 .b-sponsor {
 	max-height: 100px;
 	width: auto;
@@ -186,10 +216,6 @@ th, td {
 .footer {
 	background-color: #df6dbf;
 	text-align: center;
-}
-
-#footer_logo {
-	max-width: 350px;
 }
 
 
@@ -216,4 +242,29 @@ th, td {
     0%{background-position:0% 10%}
     50%{background-position:100% 91%}
     100%{background-position:0% 10%}
+}
+
+body {
+    background: linear-gradient(134deg, #000000, #111010, #2b2a2a, #111010, #000000);
+    background-size: 5000% 5000%;
+
+    -webkit-animation: darkGradient 51s ease infinite;
+    -moz-animation: darkGradient 51s ease infinite;
+    animation: darkGradient 51s ease infinite;
+}
+
+@-webkit-keyframes darkGradient {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@-moz-keyframes darkGradient {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes darkGradient {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
 }

@@ -1,34 +1,76 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>Pohjois-Skandinavian pääkaupungin ATK-YTP 2020</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="ATK-YTP Oulu 21. - 23.10.2020: Tietotekniikan opiskelijoiden liitto TiTOL:n kaksipäiväinen seminaaritapahtuma.">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#E269A7">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/glitch.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/countdown.js"></script>
 	<script src="js/k.js"></script>
+	<script src="js/activenavlink.js"></script>
 </head>
 
 
 <body>
-	<div class="text-center p-0 w-100">
-		<div class="topnav w-100">
-				<ul class="d-flex justify-content-center mb-0  flex-wrap">
-				<li><a class="nav-item"  href="#info">Mikä ATK-YTP?</a></li>
-				<li><a class="nav-item"  href="#schedule">Aikataulu</a></li>
-				<li><a class="nav-item"  href="#accommodation">Majoitus</a></li>
-				<li><a class="nav-item"  href="#transportation">Kuljetukset</a></li>
-				<li><a class="nav-item"  href="#safespace">Turvallisempi tila</a></li>
-				<li><a class="nav-item"  href="#corona">Korona</a></li>
-				<li><a class="nav-item"  href="#team">Tiimi</a></li>
-				<li><a class="nav-item"  href="#sponsors">Yhteistyössä</a></li>
-			</ul>
-		</div>
+	<nav class="navbar navbar-expand-lg topnav p-0 position-fixed w-100">
+		<button class="navbar-toggler m-1" type="button" data-toggle="collapse" data-target="#atkytpnavbar" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="atkytpnavbar">
+		  <ul class="navbar-nav mx-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#info">Mikä ATK-YTP? <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#schedule">Aikataulu</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#accommodation">Majoitus</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#transportation">Kuljetukset</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#safespace">Turvallisempi tila</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#corona">Korona</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#team">Tiimi</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#sponsors">Yhteistyössä</a>
+			</li>
 
+		</div>
+	  </nav>
+	  
+	<div class="text-center p-0 w-100">
 		<div class="text-center mb-6" >
 			<img id="logo" src="logo/Logo_ver2_Dark_PNG.png" alt="ATK-YTP 2020" />
 			<h3 class="mt-3" id="countdown">Ookkonää Turust?</h3>
@@ -48,7 +90,7 @@
 	<div class="container" id="schedule">
 		<div class="text-center">
 			<div class="glitch-wrapper">
-				<h1 class="glitch" data-text="Aikat ulu">Aikataulu</h1>
+				<h1 class="glitch" data-text="Aikatoulu">Aikataulu</h1>
 			</div>
 		<h3 class="pb-3">Keskiviikko</h3>
 		</div>
@@ -207,208 +249,70 @@
 			</table>
 		</div>
 			
-	<!---	<div class="col-12 col-md-3">
-				<h4>Keskiviikko</h4><br>
-				<table class="table table-dark">
-					<thead>
-					<tr>
-						<th scope="col" colspan="2">Ohjelma</th>
-
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-						<th scope="row">09:00</th>
-						<td>Majoitus aukeaa </td>
-
-					</tr>
-					<tr>
-						<th scope="row">11:15</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">12:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">13:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">14:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">15:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">16:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="col-12 col-md-3">
-				<h4>Torstai</h4><br>
-				<table class="table table-dark">
-					<thead>
-					<tr>
-						<th scope="col">Milloin</th>
-						<th scope="col">Mitä</th>
-
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-						<th scope="row">10:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">11:15</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">12:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">13:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">14:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">15:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">16:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="col-12 col-md-3">
-				<h4>Perjantai</h4><br>
-				<table class="table table-dark">
-					<thead>
-					<tr>
-						<th scope="col">Milloin</th>
-						<th scope="col">Mitä</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-						<th scope="row">10:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">11:00</th>
-						<td>Majoitus sulkeutuu </td>
-
-					</tr>
-					<tr>
-						<th scope="row">12:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">13:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">14:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">15:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					<tr>
-						<th scope="row">16:00</th>
-						<td>Töitä </td>
-
-					</tr>
-					</tbody>
-				</table>
-			</div>-->
-		</div>
-	</div>
-	<div class="container col-md-7 col-9 mx-auto" id="accommodation">
+	<div class="container" id="accommodation">
+		<div class="col-md-7 col-sm-9 col-12 mx-auto">
 		<div class="text-center">
 			<div class="glitch-wrapper">
-				<h1 class="glitch" data-text="Maj itus">Majoitus</h1>
+				<h1 class="glitch" data-text="Majøitus">Majoitus</h1>
 			</div>
-			<div class="col-xs-12">
-				<p>Majoitus ulkopaikkakuntalaisille järjestetään Pohjankartanon koululla, osoitteessa <a href="https://goo.gl/maps/eviN14apcZx6p1wa8">Leevi Madetojan katu 1</a>. Käyttäydythän majoituksessa muut huomioon ottaen. Pidä paikat puhtaana ja desibelit kohtuullisina.</p>
+			<div>
+				<p>Majoitus ulkopaikkakuntalaisille järjestetään Pohjankartanon koululla, osoitteessa <a target="_blank" href="https://goo.gl/maps/eviN14apcZx6p1wa8">Leevi Madetojan katu 1</a>. Käyttäydythän majoituksessa muut huomioon ottaen. Pidä paikat puhtaana ja desibelit kohtuullisina.</p>
 
 				<p>Majoitus on auki keskiviikkoaamuna klo 8.00-10.30 sekä illalla klo 21 alkaen. Torstaina majoitus sulkeutuu klo 11 ja aukeaa jälleen klo 21. Perjantaina majoituksesta on poistuttava klo 11 mennessä. Huolehdithan, että kaikki tavarasi tulevat mukaan majoituksesta poistuttaessa!</p>
 			</div>
 		</div>
 	</div>
-	<div class="container col-md-7 col-9 mx-auto" id="transportation">
+	</div>
+	<div class="container" id="transportation">
+		<div class="col-md-7 col-sm-9 col-12 mx-auto">
 			<div class="text-center">
 				<div class="glitch-wrapper">
-					<h1 class="glitch" data-text="Kulj tuks t">Kuljetukset</h1>
+					<h1 class="glitch" data-text="Kvljetukset">Kuljetukset</h1>
 				</div>
 				<div class="col-xs-12">
 					<p>ATK-YTP -osallistujille ilmaiset bussikuljetukset liikennöivät etkoilta jatkoille molempina iltoina klo 21.30-23.00 välillä. Bussit liikennöivät myös torstaiaamuna majoituksesta Oulun yliopistolle 9.30-11.00 välillä.</p>
 
-<p>Tämän lisäksi yliopiston ja keskustan välillä kulkee useita onnikkalinjoja. Ohjeet mobiililipun ostoon löytyvät <a href="https://www.oulunjoukkoliikenne.fi/mobiililippu">Oulun joukkoliikenteen sivuilta</a>. Jatkoilta majoitukseen siirtyessä suosittelemme yöllistä happihyppelyä, sillä kävelymatka kestää n. 15 minuuttia.</p>
+<p>Tämän lisäksi yliopiston ja keskustan välillä kulkee useita onnikkalinjoja. Ohjeet mobiililipun ostoon löytyvät <a target="_blank" href="https://www.oulunjoukkoliikenne.fi/mobiililippu">Oulun joukkoliikenteen sivuilta</a>. Jatkoilta majoitukseen siirtyessä suosittelemme yöllistä happihyppelyä, sillä kävelymatka kestää n. 15 minuuttia.</p>
 
 				</div>
 			</div>
+		</div>
 	</div>
 
-	<div class="container col-md-7 col-9 mx-auto" id="safespace">
+	<div class="container" id="safespace">
+		<div class="col-md-7 col-sm-9 col-12 mx-auto">
 			<div class="text-center">
 				<div class="glitch-wrapper">
-					<h1 class="glitch" data-text="Turvall sem i til ">Turvallisempi tila</h1>
+					<h1 class="glitch" data-text="Turvallisenpi tilä">Turvallisempi tila</h1>
 				</div>
-				<div class="col-xs-12">
+				<div>
 					<p>Tapahtumassa tulee noudattaa Blankon turvallisemman tilan periaatteita. Näin parannamme yhdessä kaikkien osallistujien sekä yhteistyökumppanien tapahtumakokemusta. Ts. Älä ole idiootti.</p>
 				</div>
 			</div>
+		</div>
 	</div>
 
 
-	<div class="container col-md-7 col-9 mx-auto" id="corona">
+	<div class="container" id="corona">
+		<div class="col-md-7 col-sm-9 col-12 mx-auto">
 			<div class="text-center">
 				<div class="glitch-wrapper">
-					<h1 class="glitch" data-text="K ron ">Korona</h1>
+					<h1 class="glitch" data-text="Korona">Korona</h1>
 				</div>
-				<div class="col-xs-12">
+				<div>
 					<p>Ethän saavu tapahtumaan, jos tunnet olosi kipeäksi tai epäilet altistumista. Pidetään kiinni 14 vuorokauden karanteeniohjeesta!</p>
 					<p>Seuraamme tarkkaavaisesti suosituksia ja rajoituksia koronaan liittyen. Osallistujamäärää joudutaan hieman rajoittamaan tänä vuonna. Tapahtumassa tulee olemaan käsidesiä saatavilla, käytäthän sitä. Huolehdithan myös siitä, ettet juo samoista pulloista tai kupeista muiden kanssa. Pidä riittävät turvaetäisyydet, myös kasvomaskin käyttöä suositellaan! Jos kuulut riskiryhmään, harkitsethan vakavasti tapahtuman väliin jättämistä. Jos tautitilanne kehittyy reilusti vakavampaan suuntaan, olemme yhdessä TiTOL:n kanssa varautuneet perumaan tapahtuman tältä vuodelta. Siinä tapauksessa toivotamme kaikki tervetulleiksi juhlistamaan ATK-YTP:n 20-vuotista taivalta ensi vuonna Ouluun.</p>
-					<p>Tietoa koronaviruksesta ja sen ennaltaehkäisystä löydät <a href="https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/ajankohtaista-koronaviruksesta-covid-19">THL:n sivuilta</a>.</p>
+					<p>Tietoa koronaviruksesta ja sen ennaltaehkäisystä löydät <a target="_blank" href="https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/ajankohtaista-koronaviruksesta-covid-19">THL:n sivuilta</a>.</p>
 				</div>
 			</div>
+		</div>
 	</div>
 	
-	<div class="container col-md-9 col-10 mx-auto" id="team">
+	<div class="container" id="team">
+		<div class="col-md-7 col-sm-9 col-12 mx-auto">
 		<div class="text-center">
 			<div class="glitch-wrapper">
-				<h1 class="glitch" data-text="Timi">Tiimi</h1>
+				<h1 class="glitch" data-text="Tiimi">Tiimi</h1>
 			</div>
 		</div>
 
@@ -439,93 +343,113 @@
 
 				</div>
 			</div>
-
+		</div>
 	</div>
 
 	</div>
 	<div class="container" id="sponsors">
 		<div class="text-center">
 			<div class="glitch-wrapper">
-				<h1 class="glitch" data-text="Yhteistyo sa">Yhteistyössä</h1>
+				<h1 class="glitch" data-text="Yhteistyossä">Yhteistyössä</h1>
 			</div>
 			<div class="row mb-4">
-				<div class="col-10 col-md-4 mx-auto" >
-					<a href="https://buutticonsulting.com/ura-buutilla">
-						<img class="img-fluid b-sponsor" src="sponsors/B_Buutti ei taustaa.png" />
+				<div class="col-10 col-md-4 mx-auto">
+					<a target="_blank" href="https://tivia.fi">
+						<img class="img-fluid a-sponsor" src="sponsors/tivia.png" alt="Tivia" />
+					</a>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-10 col-md-4 mx-auto">
+					<a target="_blank" href="https://buutticonsulting.com/ura-buutilla">
+						<img class="img-fluid b-sponsor" src="sponsors/B_Buutti ei taustaa.png" alt="Buutti" />
 					</a>
 				</div>
 				<div class="col-10 col-md-4 mx-auto ">
-					<a href="https://www.siili.com/">
-						<img class="img-fluid b-sponsor" src="sponsors/B_siili.png" />
+					<a target="_blank" href="https://www.siili.com/">
+						<img class="img-fluid b-sponsor" src="sponsors/B_siili.png" alt="Siili" />
 					</a>
 				</div>
 				<div class="col-10 col-md-4 mx-auto">
-					<a href="https://www.solita.fi/avoimet-tyopaikat">
-						<img class="img-fluid b-sponsor" src="sponsors/B_solita_rgb_horizontal_white.png" />
+					<a target="_blank" href="https://www.solita.fi/avoimet-tyopaikat">
+						<img class="img-fluid b-sponsor" src="sponsors/B_solita_rgb_horizontal_white.png" alt="Solita" />
 					</a>
 				</div>
 			</div>
 			<div class="row align-items-center mb-4 ">
 				<div class="col-6 col-md-3">
-					<a href="https://fingersoft.com">
-						<img class="img-fluid c-sponsor" src="sponsors/fingersoft_logo_1800x1514.png" />
+					<a target="_blank" href="https://corporate.elisa.fi/rekrytointi/?_ga=2.137196912.1718632192.1597047784-350889338.1583135798">
+						<img class="img-fluid c-sponsor" src="sponsors/elisa.png" alt="Elisa" />
 					</a>
 				</div>
 				<div class="col-6 col-md-3">
-					<a href="https://www.f-secure.com/en">
-						<img class="img-fluid c-sponsor" src="sponsors/F-Secure_horizontal_logo_RGB_white.png" />
+					<a target="_blank" href="https://www.f-secure.com/en">
+						<img class="img-fluid c-sponsor" src="sponsors/F-Secure_horizontal_logo_RGB_white.png" alt="F-Secure" />
 					</a>
 				</div>
 				<div class="col-6 col-md-3">
-					<a href="https://huld.io/">
-						<img class="img-fluid c-sponsor" src="sponsors/huld_logo_white_highres.png" />
+					<a target="_blank" href="https://huld.io/">
+						<img class="img-fluid c-sponsor" src="sponsors/huld_logo_white_highres.png" alt="Huld" />
 					</a>
 				</div>
 				<div class="col-6 col-md-3">
-					<a href="https://www.reaktor.com/junior/">
-						<img class="img-fluid c-sponsor" src="sponsors/reaktor_white.png" />
+					<a target="_blank" href="https://www.reaktor.com/junior/">
+						<img class="img-fluid c-sponsor" src="sponsors/reaktor_white.png" alt="Reaktor" />
 					</a>
 				</div>
-
 			</div>
 			<div class="row align-items-center mb-4">
 				<div class="col-6 col-md-3">
-					<a href="https://www.synopsys.com/software">
+					<a target="_blank" href="https://www.synopsys.com/software">
 						<img class="img-fluid c-sponsor" src="sponsors/synopsys_white.png" alt="Synopsys" />
 					</a>
 				</div>
 				<div class="col-6 col-md-3">
-					<a href="https://www.tek.fi/fi/">
-						<img class="img-fluid c-sponsor" src="sponsors/tek.png">
+					<a target="_blank" href="https://oulundatacenter.fi">
+						<img class="img-fluid c-sponsor" src="sponsors/oulun_datacenter.png" alt="Oulun Datacenter" />
 					</a>
 				</div>
 				<div class="col-6 col-md-3">
-					<a href="https://tiviaoulu.fi">
-						<img class="img-fluid c-sponsor" src="sponsors/tivia_oulu.png" />
+					<a target="_blank" href="https://www.vaimo.com/fi/osaaminen/">
+						<img class="img-fluid c-sponsor" src="sponsors/vaimo_white.png" alt="Vaimo" />
 					</a>
 				</div>
 				<div class="col-6 col-md-3">
-					<a href="https://www.vaimo.com/fi/osaaminen/">
-						<img class="img-fluid c-sponsor" src="sponsors/vaimo_white.png" />
+					<a target="_blank" href="https://tiviaoulu.fi">
+						<img class="img-fluid c-sponsor" src="sponsors/tivia_oulu.png" alt="Tivia Oulu" />
 					</a>
 				</div>
 			</div>
-
-			<div class="row align-items-center justify-content-center">
+			<div class="row align-items-center mb-4 justify-content-center ">
 				<div class="col-6 col-md-3">
-					<a href="https://www.valamis.com/">
+					<a target="_blank" href="https://www.valamis.com/">
 						<img class="img-fluid c-sponsor" src="sponsors/valamis-white.png" alt="Valamis" />
 					</a>
 				</div>
+				<div class="col-6 col-md-3">
+					<a target="_blank" href="https://fingersoft.com">
+						<img class="img-fluid c-sponsor" src="sponsors/fingersoft_logo_1800x1514.png" alt="Fingersoft" />
+					</a>
+				</div>
+				<div class="col-6 col-md-3">
+					<a target="_blank" href="https://www.tek.fi/fi/">
+						<img class="img-fluid c-sponsor" src="sponsors/tek.png" alt="TEK" />
+					</a>
+				</div>
 			</div>
-
-
 		</div>
 	</div>
 	<footer class="footer py-3">
-		<a href="https://blanko.fi">
-			<img src="blanko/logo-text.png" id="footer_logo" alt="Blanko ry" />
-		</a>
+		<div class="container">
+			<div class="row">Tähän some kanavat</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 mx-auto">
+					<a target="_blank" href="https://blanko.fi">
+						<img src="blanko/logo-text.png" id="footer_logo" alt="Blanko ry" class="img-fluid" />
+					</a>
+				</div>
+			</div>
+		</div>
 	</footer>
 
 
