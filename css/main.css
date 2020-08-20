@@ -20,7 +20,6 @@ html, body {
 }
 
 @media screen and (max-width: 650px) {#team {font-size: 0.75rem;}}
-@media screen and (max-width: 500px) {#team {font-size: 0.6rem;}}
 
 h1 {
 	margin-bottom: 0.75rem;
