@@ -7,7 +7,8 @@ html, body {
 }
 
 @media screen and (max-width: 992px) {
-	.liquid-bg1 {
+	.liquid-bg1,
+	.liquid-bg2 {
 		background-image: none;
 	}
 	#team {font-size: 0.95rem;}
@@ -112,11 +113,19 @@ ul {
 }
 
 .liquid-bg1 {
-	background-image: url('../graphics/Liquid2.png');
+	background-image: url('../graphics/right-side-liquid.png');
 	background-position: right bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+
+.liquid-bg2 {
+	background-image: url('../graphics/left-side-liquid.png');
+	background-position: left bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 .transition {
 	min-width: 100%;
 	position: relative;
@@ -156,11 +165,37 @@ ul {
 	background-color: #df6dbf;
 }
 
+.timetable-container {
+	margin-bottom: 4rem;
+	background-color: #df6dbf;
+}
+
+.timetable {
+	text-align: left;
+}
+
+tbody {
+	border-top: solid 2px black;
+}
+
+th, td {
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+}
+
+.timetable th:first-of-type,
+.timetable td:first-of-type {
+	text-align: right;
+	font-weight: 700;
+	padding-right: 3rem;
+	width: 20%;
+}
+
 #sponsors img {
 	padding: 0.75rem 0;
 }
 
-.a-sponsor {
+.top-sponsor {
 	max-height: 120px;
 	width: auto;
 }
@@ -173,6 +208,10 @@ ul {
 .c-sponsor {
 	max-height: 70px;
 	width: auto;
+}
+
+.c-sponsor#odc {
+	min-height: 100px;
 }
 
 .textal {
@@ -188,7 +227,6 @@ ul {
 	background-color: #df6dbf;
 	text-align: center;
 }
-
 
 
 .k {
