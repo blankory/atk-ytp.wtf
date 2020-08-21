@@ -11,6 +11,6 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Nyt kyllä suruttaa.";
+    document.getElementById("countdown").innerHTML = "<p>0d 0h 0m 0s</p>" + "ZYN ZYN";
   }
 }, 1000);
