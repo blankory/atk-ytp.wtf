@@ -125,6 +125,11 @@ ul {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+	.liquid-bg1, .liquid-bg2 {
+		background: none;
+	}
+}
 
 .transition {
 	min-width: 100%;
@@ -172,6 +177,7 @@ ul {
 
 .timetable {
 	text-align: left;
+	color: #FFF;
 }
 
 tbody {
@@ -189,6 +195,18 @@ th, td {
 	font-weight: 700;
 	padding-right: 3rem;
 	width: 20%;
+}
+
+@media screen and (max-width:576px) {
+	.timetable th:first-of-type,
+	.timetable td:first-of-type {
+		padding-right: 0;
+		width: auto;
+		text-align: left;
+	}
+	.timetable {
+		font-size: 1rem;
+	}
 }
 
 #sponsors img {
