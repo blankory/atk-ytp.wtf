@@ -163,17 +163,14 @@ ul {
 
 .timetable {
 	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	border-top: solid 1px black;
+}
+
+tbody {
+	border-top: solid 2px black;
 }
 
 th, td {
 	border-bottom: solid 1px black;
-	border-top: solid 1px black;
-}
-
-.timetable tbody:first-of-type {
 	border-top: solid 1px black;
 }
 
@@ -202,6 +199,10 @@ th, td {
 .c-sponsor {
 	max-height: 70px;
 	width: auto;
+}
+
+.c-sponsor#odc {
+	min-height: 100px;
 }
 
 .textal {
