@@ -31,6 +31,7 @@
 	<script src="js/countdown.js"></script>
 	<script src="js/k.js"></script>
 	<script src="js/activenavlink.js"></script>
+	<script src="https://kit.fontawesome.com/58c6c09cc8.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -38,12 +39,18 @@
 	<nav class="navbar navbar-expand-lg topnav p-0 position-fixed w-100">
 		<button class="navbar-toggler m-1" type="button" data-toggle="collapse" data-target="#atkytpnavbar" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
+		  <span class="navbar-close-icon"><i class="fas fa-times fa-2x"></i></span>
 		</button>
 	  
 		<div class="collapse navbar-collapse" id="atkytpnavbar">
 		  <ul class="navbar-nav mx-auto">
 			<li class="nav-item active">
-			  <a class="nav-link" href="#info">Mikä ATK-YTP? <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="#home">
+					<i class="fas fa-home"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#info">Mikä ATK-YTP?</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="#schedule">Aikataulu</a>
@@ -71,7 +78,7 @@
 	  </nav>
 	  
 	<div class="text-center p-0 w-100">
-		<div class="text-center mb-6" >
+		<div class="text-center mb-6" id="home">
 			<img id="logo" src="logo/Logo_ver2_Dark_PNG.png" alt="ATK-YTP 2020" />
 			<h3 class="mt-3" id="countdown">Ookkonää Turusta?</h3>
 		</div>
@@ -85,8 +92,9 @@
 			<p>ATK-yhteistoimintapäivät, tai tuttavallisemmin ATK-YTP, järjestetään tulevana syksynä Oulussa 21.-23.10.2020 (koronavarauksella). Tietotekniikan opiskelijoiden liiton eli TiTOL:n kaksipäiväinen seminaaritapahtuma kerää vuosittain yhteen IT-alan opiskelijoita seitsemästä yliopistokaupungista. Tapahtuman järjestäjänä toimii isäntäkaupungin ICT-ainejärjestö, joka tänä vuonna on Oulun yliopiston tietojenkäsittelijöiden kilta Blanko ry. Tapahtuma järjestetään tänä vuonna yhteistyössä TIVIAn kanssa, johon niin Blanko, kuin TiTOL:kin kuuluvat!</p>
 			<p>Yhteistoimintapäivät tarjoavat alan opiskelijoille ympäri Suomen mahdollisuuden tutustua toisiinsa sekä alan yrityksiin hauskalla tavalla. Tapahtumassa lukuisat alan ammattilaiset pitävät vaikuttavia luentoja kahtena seminaaripäivänä. Luennot pidetään Oulun yliopistolla L1-salissa lokakuun 21. ja 22. päivä klo 11-16, jonka jälkeen verkostoitumiselle on aikaa iltaohjelman parissa. Tämän lisäksi TiTOL pitää tapahtuman aikana syysliittokokouksensa.
 		</div>
+		
 	</div>
-
+	<span class="divider"></span>
 	<div class="container" id="schedule">
 		<div class="text-center">
 			<div class="glitch-wrapper">
@@ -243,7 +251,7 @@
 			</table>
 		</div>
 	</div>
-			
+	<span class="divider"></span>		
 	<div class="container-fluid" id="accommodation">
 		<div class="col-sm-9 col-12 mx-auto">
 		<div class="text-center">
@@ -258,6 +266,7 @@
 		</div>
 	</div>
 	</div>
+	<span class="divider"></span>
 	<div class="container-fluid" id="transportation">
 		<div class="col-sm-9 col-12 mx-auto">
 			<div class="text-center">
@@ -273,7 +282,7 @@
 			</div>
 		</div>
 	</div>
-
+	<span class="divider"></span>
 	<div class="container-fluid" id="safespace">
 		<div class="col-sm-9 col-12 mx-auto">
 			<div class="text-center">
@@ -287,7 +296,7 @@
 		</div>
 	</div>
 
-
+	<span class="divider"></span>
 	<div class="liquid-bg2 text-center" id="corona">
 		<div class="container-fluid">
 		<div class="col-sm-9 col-12 mx-auto">
@@ -304,7 +313,7 @@
 		</div>
 	</div>
 	</div>
-	
+	<span class="divider"></span>
 	<div class="container-fluid" id="team">
 		<div class="col-sm-9 col-12 mx-auto">
 		<div class="text-center">
@@ -342,6 +351,7 @@
 	
 
 	</div>
+	<span class="divider"></span>
 	<div class="container-fluid" id="sponsors">
 		<div class="text-center">
 			<div class="glitch-wrapper">
@@ -436,9 +446,18 @@
 	</div>
 	<footer class="footer py-3">
 		<div class="container">
-			<div class="row">Tähän some kanavat</div>
 			<div class="row">
-				<div class="col-12 col-sm-6 mx-auto">
+				<div class="col-12 col-sm-9 text-left">
+					<h4>Ota yhteyttä</h3>
+					<p class="my-2 my-sm-4">
+						<a href="https://www.facebook.com/blankory" target="_blank"><i class="fab fa-facebook-f fa-2x mr-2"></i></a>
+						<a href="https://www.instagram.com/blanko_ry/" target="_blank"><i class="fab fa-instagram fa-2x mr-2"></i></a>
+						<a href="mailto:atk-ytp@blanko.fi" target="_blank"><i class="far fa-envelope fa-2x mr-2"></i></a>
+						<a href="https://t.me/joinchat/EtmMk1DWMYCtpk4AU5gkQw" target="_blank"><i class="fab fa-telegram-plane fa-2x mr-2"></i></a>
+					</p>
+					<p><i class="far fa-copyright"></i> ATK-YTP toimikunta, Blanko ry</p>
+				</div>
+			<div class="col-12 col-sm-3">
 					<a target="_blank" href="https://blanko.fi">
 						<img src="blanko/logo-text.png" id="footer_logo" alt="Blanko ry" class="img-fluid" />
 					</a>

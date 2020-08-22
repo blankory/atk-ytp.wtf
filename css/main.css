@@ -130,6 +130,31 @@ ul {
 		background: none;
 	}
 }
+.divider {
+	position: relative;
+	width: 80%;
+	margin: 2rem auto;
+	height: 3px;
+	display: block;
+}
+.divider::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 2px;
+	background-image: linear-gradient(to right, transparent, rgb(214,116,156), transparent);
+}
+@media screen and (max-width: 768px) {
+	.divider {
+		width: 100%;
+	}
+}
+.navbar-close-icon {
+	display: none;
+}
 
 .transition {
 	min-width: 100%;
@@ -244,6 +269,13 @@ th, td {
 .footer {
 	background-color: #df6dbf;
 	text-align: center;
+	font-size: 1rem;
+}
+.footer a {
+	color: #FFF;
+}
+.footer a:hover {
+	color: #4056A6;
 }
 
 
