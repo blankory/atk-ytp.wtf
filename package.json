@@ -1,0 +1,26 @@
+{
+  "name": "atk-ytp.wtf",
+  "version": "1.0.0",
+  "description": "1. `git clone https://github.com/blankory/atk-ytp.wtf.git`\r 2. ЗЫН ЗЫН",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-pug": "^5.0.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blankory/atk-ytp.wtf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blankory/atk-ytp.wtf/issues"
+  },
+  "homepage": "https://github.com/blankory/atk-ytp.wtf#readme"
+}
