@@ -1,0 +1,356 @@
+
+@-webkit-keyframes AnimationName {
+	0% {
+		background-position: 0% 10%;
+	}
+	50% {
+		background-position: 100% 91%;
+	}
+	100% {
+		background-position: 0% 10%;
+	}
+}
+@-moz-keyframes AnimationName {
+	0% {
+		background-position: 0% 10%;
+	}
+	50% {
+		background-position: 100% 91%;
+	}
+	100% {
+		background-position: 0% 10%;
+	}
+}
+@keyframes AnimationName {
+	0% {
+		background-position: 0% 10%;
+	}
+	50% {
+		background-position: 100% 91%;
+	}
+	100% {
+		background-position: 0% 10%;
+	}
+}
+@-webkit-keyframes darkGradient {
+	0% {
+		background-position: 0% 9%;
+	}
+	50% {
+		background-position: 100% 92%;
+	}
+	100% {
+		background-position: 0% 9%;
+	}
+}
+@-moz-keyframes darkGradient {
+	0% {
+		background-position: 0% 9%;
+	}
+	50% {
+		background-position: 100% 92%;
+	}
+	100% {
+		background-position: 0% 9%;
+	}
+}
+@keyframes darkGradient {
+	0% {
+		background-position: 0% 9%;
+	}
+	50% {
+		background-position: 100% 92%;
+	}
+	100% {
+		background-position: 0% 9%;
+	}
+}
+html {
+	color: #e7e7e7;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	scroll-behavior: smooth;
+}
+body {
+	color: #e7e7e7;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	scroll-behavior: smooth;
+	background: linear-gradient(134deg, #000000, #111010, #2b2a2a, #111010, #000000);
+	background-size: 5000% 5000%;
+	-webkit-animation: darkGradient 51s ease infinite;
+	-moz-animation: darkGradient 51s ease infinite;
+	animation: darkGradient 51s ease infinite;
+}
+h1 {
+	margin-bottom: 0.75rem;
+}
+.mb-6 {
+	margin-bottom: 5rem;
+}
+#logo {
+	margin-top: 100px;
+	max-width: 480px;
+}
+ul {
+	list-style: none;
+}
+.parallax {
+	height: 58%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0%;
+	padding: 0%;
+	text-align: center;
+}
+#countdown {
+	font-family: 'Archivo Black', sans-serif;
+	margin-bottom: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	color: #e7e7e7;
+	font: 44%;
+}
+.topnav {
+	background-color: #4056A6;
+	color: #FFF;
+	z-index: 100;
+	.navbar-toggler {
+		color: rgba(255, 255, 255, 0.8);
+		border-color: rgba(255,255,255,.5);
+	}
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
+	a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		font-weight: 600;
+		&:hover {
+			background-color: #E269A7;
+			color: white;
+		}
+	}
+	.active {
+		a {
+			background-color: #4CAF50;
+			color: white;
+		}
+	}
+}
+.liquid-bg1 {
+	background-image: url('../graphics/right-side-liquid.png');
+	background-position: right bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.liquid-bg2 {
+	background-image: url('../graphics/left-side-liquid.png');
+	background-position: left bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.divider {
+	position: relative;
+	width: 80%;
+	margin: 2rem auto;
+	height: 3px;
+	display: block;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 5%;
+		right: 5%;
+		width: 90%;
+		height: 2px;
+		background-image: linear-gradient(to right, transparent, rgb(214,116,156), transparent);
+	}
+}
+.navbar-close-icon {
+	display: none;
+}
+.transition {
+	min-width: 100%;
+	position: relative;
+}
+#info {
+	text-align: center;
+}
+#sponsors {
+	margin-bottom: 32px;
+	img {
+		padding: 0.75rem 0;
+	}
+}
+.container-fluid {
+	background-image: url("../img/transition.png");
+	min-height: 10vh;
+}
+.profile {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.jumbotron {
+	background-color: #000000;
+}
+.container {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	text-align: center;
+}
+.table-dark {
+	background-color: #df6dbf;
+}
+.timetable-container {
+	margin-bottom: 4rem;
+	background-color: #df6dbf;
+}
+.timetable {
+	text-align: left;
+	color: #FFF;
+	th {
+		&:first-of-type {
+			text-align: right;
+			font-weight: 700;
+			padding-right: 3rem;
+			width: 20%;
+		}
+	}
+	td {
+		&:first-of-type {
+			text-align: right;
+			font-weight: 700;
+			padding-right: 3rem;
+			width: 20%;
+		}
+	}
+}
+tbody {
+	border-top: solid 2px black;
+}
+th {
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+}
+td {
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+}
+.top-sponsor {
+	max-height: 120px;
+	width: auto;
+}
+.b-sponsor {
+	max-height: 100px;
+	width: auto;
+}
+.c-sponsor {
+	max-height: 70px;
+	width: auto;
+}
+.c-sponsor#odc {
+	min-height: 100px;
+}
+.textal {
+	text-align: right;
+	&:nth-child(even) {
+		text-align: left;
+	}
+}
+.footer {
+	background-color: #df6dbf;
+	text-align: center;
+	font-size: 1rem;
+	a {
+		color: #FFF;
+		&:hover {
+			color: #4056A6;
+		}
+	}
+}
+.k {
+	background: linear-gradient(156deg, #74d6bd, #d6749c, #7d74d6, #6af815, #000000, #00d3fe);
+	background-size: 1200% 1200%;
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
+}
+@media screen and (max-width: 992px) {
+	.liquid-bg1 {
+		background-image: none;
+	}
+	.liquid-bg2 {
+		background-image: none;
+	}
+	#team {
+		font-size: 0.95rem;
+	}
+}
+@media screen and (max-width: 700px) {
+	#logo {
+		max-width: 75% !important;
+	}
+}
+@media screen and (max-width: 650px) {
+	#team {
+		font-size: 0.75rem;
+	}
+	.glitch {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.glitch {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width:992px) {
+	.topnav {
+		a {
+			width: 100%;
+			text-align: left;
+			padding-left: 0.5rem !important;
+			padding-right: 0.5rem !important;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.liquid-bg1 {
+		background: none;
+	}
+	.liquid-bg2 {
+		background: none;
+	}
+	.divider {
+		width: 100%;
+	}
+}
+@media screen and (max-width:576px) {
+	.timetable {
+		th {
+			&:first-of-type {
+				padding-right: 0;
+				width: auto;
+				text-align: left;
+			}
+		}
+		td {
+			&:first-of-type {
+				padding-right: 0;
+				width: auto;
+				text-align: left;
+			}
+		}
+		font-size: 1rem;
+	}
+}
+
