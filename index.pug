@@ -1,11 +1,339 @@
-nav
-  navbar-default  div
-    h1 My Website!
-  ul
-    li
-      a Home
-    li
-      a Page 1
-    li
-      a Page 2
-  input
+doctype html
+head
+  title Pohjois-Skandinavian p&auml;&auml;kaupungin ATK-YTP 2020
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='description' content='ATK-YTP Oulu 21. - 23.10.2020: Tietotekniikan opiskelijoiden liitto TiTOL:n kaksipäiväinen seminaaritapahtuma.')
+  link(rel='apple-touch-icon' sizes='57x57' href='/apple-icon-57x57.png')
+  link(rel='apple-touch-icon' sizes='60x60' href='favicon/apple-icon-60x60.png')
+  link(rel='apple-touch-icon' sizes='72x72' href='favicon/apple-icon-72x72.png')
+  link(rel='apple-touch-icon' sizes='76x76' href='favicon/apple-icon-76x76.png')
+  link(rel='apple-touch-icon' sizes='114x114' href='favicon/apple-icon-114x114.png')
+  link(rel='apple-touch-icon' sizes='120x120' href='favicon/apple-icon-120x120.png')
+  link(rel='apple-touch-icon' sizes='144x144' href='favicon/apple-icon-144x144.png')
+  link(rel='apple-touch-icon' sizes='152x152' href='favicon/apple-icon-152x152.png')
+  link(rel='apple-touch-icon' sizes='180x180' href='favicon/apple-icon-180x180.png')
+  link(rel='icon' type='image/png' sizes='192x192' href='favicon/android-icon-192x192.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='favicon/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='96x96' href='favicon/favicon-96x96.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='favicon/favicon-16x16.png')
+  link(rel='manifest' href='favicon/manifest.json')
+  meta(name='msapplication-TileColor' content='#E269A7')
+  meta(name='msapplication-TileImage' content='favicon/ms-icon-144x144.png')
+  meta(name='theme-color' content='#E269A7')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+  link(rel='stylesheet' href='css/glitch.css')
+  link(rel='stylesheet' href='css/main.css')
+  script(src='js/jquery-3.5.1.min.js')
+  script(src='js/bootstrap.min.js')
+  script(src='js/countdown.js')
+  script(src='js/k.js')
+  script(src='js/activenavlink.js')
+  script(src='https://kit.fontawesome.com/58c6c09cc8.js' crossorigin='anonymous')
+nav.navbar.navbar-expand-lg.topnav.p-0.position-fixed.w-100
+  button.navbar-toggler.m-1(type='button' data-toggle='collapse' data-target='#atkytpnavbar' aria-controls='navbarsExample01' aria-expanded='true' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+    span.navbar-close-icon
+      i.fas.fa-times.fa-2x
+  #atkytpnavbar.collapse.navbar-collapse
+    ul.navbar-nav.mx-auto
+      li.nav-item.active
+        a.nav-link(href='#home')
+          i.fas.fa-home
+      li.nav-item
+        a.nav-link(href='#info') Mik&auml; ATK-YTP?
+      li.nav-item
+        a.nav-link(href='#schedule') Aikataulu
+      li.nav-item
+        a.nav-link(href='#accommodation') Majoitus
+      li.nav-item
+        a.nav-link(href='#transportation') Kuljetukset
+      li.nav-item
+        a.nav-link(href='#safespace') Turvallisempi tila
+      li.nav-item
+        a.nav-link(href='#corona') Korona
+      li.nav-item
+        a.nav-link(href='#team') Tiimi
+      li.nav-item
+        a.nav-link(href='#sponsors') Yhteisty&ouml;ss&auml;
+.text-center.p-0.w-100
+  #home.text-center.mb-6
+    img#logo(src='logo/Logo_ver2_Dark_PNG.png' alt='ATK-YTP 2020')
+    h3#countdown.mt-3 Ookkon&auml;&auml; Turusta?
+.liquid-bg1.text-center
+  .glitch-wrapper
+    h1.glitch(data-text='Mika ATK YTP?') Mik&auml; ATK-YTP?
+  #info.col-sm-9.col-12.mx-auto
+    p
+      | ATK-yhteistoimintap&auml;iv&auml;t, tai tuttavallisemmin ATK-YTP, j&auml;rjestet&auml;&auml;n tulevana syksyn&auml; Oulussa 21.-23.10.2020 (koronavarauksella). Tietotekniikan opiskelijoiden liiton eli TiTOL:n kaksip&auml;iv&auml;inen seminaaritapahtuma ker&auml;&auml; vuosittain yhteen IT-alan opiskelijoita seitsem&auml;st&auml; yliopistokaupungista. Tapahtuman j&auml;rjest&auml;j&auml;n&auml; toimii is&auml;nt&auml;kaupungin ICT-ainej&auml;rjest&ouml;, joka t&auml;n&auml; vuonna on Oulun yliopiston tietojenk&auml;sittelij&ouml;iden kilta Blanko ry. Tapahtuma j&auml;rjestet&auml;&auml;n t&auml;n&auml; vuonna yhteisty&ouml;ss&auml; TIVIAn kanssa, johon niin Blanko, kuin TiTOL:kin kuuluvat!
+    p
+      | Yhteistoimintap&auml;iv&auml;t tarjoavat alan opiskelijoille ymp&auml;ri Suomen mahdollisuuden tutustua toisiinsa sek&auml; alan yrityksiin hauskalla tavalla. Tapahtumassa lukuisat alan ammattilaiset pit&auml;v&auml;t vaikuttavia luentoja kahtena seminaarip&auml;iv&auml;n&auml;. Luennot pidet&auml;&auml;n Oulun yliopistolla L1-salissa lokakuun 21. ja 22. p&auml;iv&auml; klo 11-16, jonka j&auml;lkeen verkostoitumiselle on aikaa iltaohjelman parissa. T&auml;m&auml;n lis&auml;ksi TiTOL pit&auml;&auml; tapahtuman aikana syysliittokokouksensa.
+span.divider
+#schedule.container
+  .text-center
+    .glitch-wrapper
+      h1.glitch(data-text='Aikatoulu') Aikataulu
+    h3.pb-3 Keskiviikko
+  .timetable-container.table-responsive
+    table.table.timetable.mb-0
+      tr
+        th Klo
+        th Ohjelma
+      tr
+        td 8:00
+        td Majoitus aukeaa
+      tr
+        td 10:00
+        td Alkutervehdys: Blanko, TiTOL, TEK
+      tr
+        td 11:00
+        td Solita: Mit&auml; tekee Data Engineer?
+      tr
+        td 12:00
+        td Buutti: Yksi kieli, monta murretta - C++:aa jalkakanuunoista nykyp&auml;iv&auml;&auml;n
+      tr
+        td 13:00
+        td TiTOLin liittokokous
+      tr
+        td 13:00
+        td F-Secure: Kiertotiet&auml; tietoturva-alalle
+      tr
+        td 14:00
+        td Vaimo: From monolithic applications towards modern microservices
+      tr
+        td 15:00
+        td Synopsys: Free Wi-Fi available?
+      tr
+        td 16:00
+        td Suunnistus alkaa
+      tr
+        td 18:00
+        td Etkot by Siili @ Alppimaja
+      tr
+        td 21:00
+        td Majoitus aukeaa
+      tr
+        td 21:30
+        td Kuljetukset Alppimajalta 45 Specialiin
+      tr
+        td 22:00
+        td Overflow by Solita @ 45 Special
+      tr
+        td 23:00
+        td Alppimaja sulkeutuu
+      tr
+        td 04:00
+        td Jatkot loppuu
+  h3.pb-3 Torstai
+  .timetable-container.table-responsive
+    table.table.timetable.mb-0
+      tr
+        th Klo
+        th Ohjelma
+      tr
+        td 8:00
+        td Aamusauna
+      tr
+        td 11:00
+        td Reaktor: TBA
+      tr
+        td 12:00
+        td Siili: Exciting Software Engineering Career(s)
+      tr
+        td 13:00
+        td Oulun DataCenter: Hybridipilvi-ratkaisut
+      tr
+        td 14:00
+        td Huld: Siell&auml; miss&auml; digitaalinen ja fyysinen maailman yhdistyv&auml;t
+      tr
+        td 15:00
+        td Elisa: Data apuna koronaviruksen levi&auml;misen ennustamisessae
+      tr
+        td 16:00
+        td Suunnistus alkaa
+      tr
+        td 18:00
+        td Shake Dat Buutti @ Alppimaja
+      tr
+        td 21:00
+        td Majoitus aukeaa
+      tr
+        td 21:30
+        td Kuljetukset Alppimajalta Basso Clubille
+      tr
+        td 22:00
+        td Algorytmit by TIVIA @ Basso Club
+      tr
+        td 23:00
+        td Alppimaja sulkeutuu
+      tr
+        td 04:00
+        td Jatkot loppuu
+  h3.pb-3 Perjantai
+  .timetable-container.table-responsive
+    table.table.timetable.mb-0
+      tr
+        th Klo
+        th Ohjelma
+      tr
+        td 11:00
+        td Majoitus sulkeutuu
+      tr
+        td 23:00
+        td Turku puoliv&auml;liss&auml; kotimatkaa
+span.divider
+#accommodation.container-fluid
+  .col-sm-9.col-12.mx-auto
+    .text-center
+      .glitch-wrapper
+        h1.glitch(data-text='Majøitus') Majoitus
+      div
+        p
+          | Majoitus ulkopaikkakuntalaisille j&auml;rjestet&auml;&auml;n Pohjankartanon koululla, osoitteessa 
+          a(target='_blank' href='https://goo.gl/maps/eviN14apcZx6p1wa8') Leevi Madetojan katu 1
+          | . K&auml;ytt&auml;ydyth&auml;n majoituksessa muut huomioon ottaen. Pid&auml; paikat puhtaana ja desibelit kohtuullisina.
+        p
+          | Majoitus on auki keskiviikkoaamuna klo 8.00-10.30 sek&auml; illalla klo 21 alkaen. Torstaina majoitus sulkeutuu klo 11 ja aukeaa j&auml;lleen klo 21. Perjantaina majoituksesta on poistuttava klo 11 menness&auml;. Huolehdithan, ett&auml; kaikki tavarasi tulevat mukaan majoituksesta poistuttaessa!
+span.divider
+#transportation.container-fluid
+  .col-sm-9.col-12.mx-auto
+    .text-center
+      .glitch-wrapper
+        h1.glitch(data-text='Kvljetukset') Kuljetukset
+      .col-xs-12
+        p
+          | ATK-YTP -osallistujille ilmaiset bussikuljetukset liikenn&ouml;iv&auml;t etkoilta jatkoille molempina iltoina klo 21.30-23.00 v&auml;lill&auml;. Bussit liikenn&ouml;iv&auml;t my&ouml;s torstaiaamuna majoituksesta Oulun yliopistolle 9.30-11.00 v&auml;lill&auml;.
+        p
+          | T&auml;m&auml;n lis&auml;ksi yliopiston ja keskustan v&auml;lill&auml; kulkee useita onnikkalinjoja. Ohjeet mobiililipun ostoon l&ouml;ytyv&auml;t 
+          a(target='_blank' href='https://www.oulunjoukkoliikenne.fi/mobiililippu') Oulun joukkoliikenteen sivuilta
+          | . Jatkoilta majoitukseen siirtyess&auml; suosittelemme y&ouml;llist&auml; happihyppely&auml;, sill&auml; k&auml;velymatka kest&auml;&auml; n. 15 minuuttia.
+span.divider
+#safespace.container-fluid
+  .col-sm-9.col-12.mx-auto
+    .text-center
+      .glitch-wrapper
+        h1.glitch(data-text='Turvallisenpi tilä') Turvallisempi tila
+      div
+        p
+          | Tapahtumassa tulee noudattaa Blankon turvallisemman tilan periaatteita. N&auml;in parannamme yhdess&auml; kaikkien osallistujien sek&auml; yhteisty&ouml;kumppanien tapahtumakokemusta. Ts. &Auml;l&auml; ole idiootti.
+span.divider
+#corona.liquid-bg2.text-center
+  .container-fluid
+    .col-sm-9.col-12.mx-auto
+      .text-center
+        .glitch-wrapper
+          h1.glitch(data-text='Korona') Korona
+        div
+          p
+            | Eth&auml;n saavu tapahtumaan, jos tunnet olosi kipe&auml;ksi tai ep&auml;ilet altistumista. Pidet&auml;&auml;n kiinni 14 vuorokauden karanteeniohjeesta!
+          p
+            | Seuraamme tarkkaavaisesti suosituksia ja rajoituksia koronaan liittyen. Osallistujam&auml;&auml;r&auml;&auml; joudutaan hieman rajoittamaan t&auml;n&auml; vuonna. Tapahtumassa tulee olemaan k&auml;sidesi&auml; saatavilla, k&auml;yt&auml;th&auml;n sit&auml;. Huolehdithan my&ouml;s siit&auml;, ettet juo samoista pulloista tai kupeista muiden kanssa. Pid&auml; riitt&auml;v&auml;t turvaet&auml;isyydet, my&ouml;s kasvomaskin k&auml;ytt&ouml;&auml; suositellaan! Jos kuulut riskiryhm&auml;&auml;n, harkitsethan vakavasti tapahtuman v&auml;liin j&auml;tt&auml;mist&auml;. Jos tautitilanne kehittyy reilusti vakavampaan suuntaan, olemme yhdess&auml; TiTOL:n kanssa varautuneet perumaan tapahtuman t&auml;lt&auml; vuodelta. Siin&auml; tapauksessa toivotamme kaikki tervetulleiksi juhlistamaan ATK-YTP:n 20-vuotista taivalta ensi vuonna Ouluun.
+          p
+            | Tietoa koronaviruksesta ja sen ennaltaehk&auml;isyst&auml; l&ouml;yd&auml;t 
+            a(target='_blank' href='https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/ajankohtaista/ajankohtaista-koronaviruksesta-covid-19') THL:n sivuilta
+            | .
+span.divider
+#team.container-fluid
+  .col-sm-9.col-12.mx-auto
+    .text-center
+      .glitch-wrapper
+        h1.glitch(data-text='Tiimi') Tiimi
+    .row.justify-content-center.mb-3
+      .row.row-cols-2.textal
+        .col.textal Atte Tornberg
+        .col.textal Aino Reinikainen
+        .col.textal Aleksi Siipola
+        .col.textal Aleksi V&auml;rtt&ouml;
+        .col.textal Hanna Ollikainen
+        .col.textal Janne Sipil&auml;
+        .col.textal Jenna Veps&auml;l&auml;inen
+        .col.textal Juhani Karppinen
+        .col.textal Juho Grubert
+        .col.textal Karoliina Autio
+        .col.textal Katja Nyk&auml;nen
+        .col.textal Laura Djerf
+        .col.textal Maria Ollila
+        .col.textal Niina Lunden
+        .col.textal Niklas M&auml;kel&auml;
+        .col.textal Niklas Riekki
+        .col.textal Santeri Kottari
+        .col.textal Tuomas Aho
+        .col.textal Veera Kiiskil&auml;
+        .col.textal Ville Siikaluoma
+span.divider
+#sponsors.container
+  .text-center
+    .glitch-wrapper
+      h1.glitch(data-text='Yhteistyossä') Yhteisty&ouml;ss&auml;
+    .row.mb-4
+      .col-10.col-md-4.mx-auto
+        a(target='_blank' href='https://tivia.fi')
+          img.img-fluid.sponsor.top-sponsor(src='sponsors/tivia.png' alt='Tivia')
+    .row.mb-4
+      .col-10.col-md-4.mx-auto
+        a(target='_blank' href='https://buutticonsulting.com/ura-buutilla')
+          img.img-fluid.sponsor.b-sponsor(src='sponsors/buutti.png' alt='Buutti')
+      .col-10.col-md-4.mx-auto
+        a(target='_blank' href='https://www.siili.com/')
+          img.img-fluid.sponsor.b-sponsor(src='sponsors/siili.png' alt='Siili')
+      .col-10.col-md-4.mx-auto
+        a(target='_blank' href='https://www.solita.fi/avoimet-tyopaikat')
+          img.img-fluid.sponsor.b-sponsor(src='sponsors/solita.png' alt='Solita')
+    .row.align-items-center.mb-4
+      .col-6.col-md-3
+        a(target='_blank' href='https://corporate.elisa.fi/rekrytointi/?_ga=2.137196912.1718632192.1597047784-350889338.1583135798')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/elisa.png' alt='Elisa')
+      .col-6.col-md-3
+        a(target='_blank' href='https://www.f-secure.com/en')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/f-secure.png' alt='F-Secure')
+      .col-6.col-md-3
+        a(target='_blank' href='https://huld.io/')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/huld.png' alt='Huld')
+      .col-6.col-md-3
+        a(target='_blank' href='https://www.reaktor.com/junior/')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/reaktor.png' alt='Reaktor')
+    .row.align-items-center.mb-4
+      .col-6.col-md-3
+        a(target='_blank' href='https://www.synopsys.com/software')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/synopsys.png' alt='Synopsys')
+      .col-6.col-md-3
+        a(target='_blank' href='https://oulundatacenter.fi')
+          img#odc.img-fluid.sponsor.c-sponsor(src='sponsors/oulun_datacenter.png' alt='Oulun DataCenter')
+      .col-6.col-md-3
+        a(target='_blank' href='https://www.vaimo.com/fi/osaaminen/')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/vaimo.png' alt='Vaimo')
+      .col-6.col-md-3
+        a(target='_blank' href='https://tiviaoulu.fi')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/tivia_oulu.png' alt='Tivia Oulu')
+    .row.align-items-center.mb-4.justify-content-center
+      .col-6.col-md-3
+        a(target='_blank' href='https://www.valamis.com/')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/valamis.png' alt='Valamis')
+      .col-6.col-md-3
+        a(target='_blank' href='https://fingersoft.com')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/fingersoft.png' alt='Fingersoft')
+      .col-6.col-md-3
+        a(target='_blank' href='https://www.tek.fi/fi/')
+          img.img-fluid.sponsor.c-sponsor(src='sponsors/tek.png' alt='TEK')
+footer.footer.py-3
+  .container
+    .row
+      .col-12.col-sm-9.text-left
+        h4 Ota yhteytt&auml;
+        p.my-2.my-sm-4
+          a(href='https://www.facebook.com/blankory' target='_blank')
+            i.fab.fa-facebook-f.fa-2x.mr-2
+          a(href='https://www.instagram.com/blanko_ry/' target='_blank')
+            i.fab.fa-instagram.fa-2x.mr-2
+          a(href='mailto:atk-ytp@blanko.fi' target='_blank')
+            i.far.fa-envelope.fa-2x.mr-2
+          a(href='https://t.me/joinchat/Gy5sjUZsnGf1i0V2IIK-8Q' target='_blank')
+            i.fab.fa-telegram-plane.fa-2x.mr-2
+        p
+          i.far.fa-copyright
+          |  ATK-YTP toimikunta, Blanko ry
+      .col-12.col-sm-3
+        a(target='_blank' href='https://blanko.fi')
+          img#footer_logo.img-fluid(src='graphics/blanko/logo-text.png' alt='Blanko ry')
+
