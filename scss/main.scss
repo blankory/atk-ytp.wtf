@@ -161,6 +161,26 @@ ul {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+#liquid-1 {
+	position: absolute;
+	right: 0;
+	top:40%;
+	z-index: -1;
+}
+#liquid-2 {
+	position: absolute;
+	left: 0;
+	top: 3000px;
+	z-index: -1;
+}
+#liquid-3 {
+	position: absolute;
+	right: 0;
+	top: 5000px;
+	z-index: -1;
+	height: 700px;
+	width: auto;
+}
 .liquid-bg2 {
 	background-image: url('../graphics/left-side-liquid.png');
 	background-position: left bottom;
@@ -217,12 +237,9 @@ ul {
 	padding-bottom: 32px;
 	text-align: center;
 }
-.table-dark {
-	// background-color: #df6dbf;
-}
+
 .timetable-container {
 	margin-bottom: 4rem;
-	// background-color: #df6dbf;
 	border: 10px solid #df6dbf;
 	border-image-slice: 1;
 	border-width: 4px;
@@ -282,11 +299,11 @@ td {
 	width: auto;
 }
 .b-sponsor {
-	max-height: 100px;
+	max-height: 110px;
 	width: auto;
 }
 .c-sponsor {
-	max-height: 70px;
+	max-height: 90px;
 	width: auto;
 }
 .c-sponsor#odc {
@@ -328,12 +345,15 @@ td {
 	-moz-animation: AnimationName 5s ease infinite;
 	animation: AnimationName 5s ease infinite;
 }
+.mangotext {
+	color: transparent;
+}
 @media screen and (max-width: 992px) {
-	.liquid-bg1 {
+	.liquid-bg1, .liquid-bg2 {
 		background-image: none;
 	}
-	.liquid-bg2 {
-		background-image: none;
+	#liquid-1, #liquid-2, #liquid-3 {
+		display: none;
 	}
 	#team {
 		font-size: 0.95rem;

@@ -25,7 +25,9 @@ $(document).ready(function(){
         $('.navbar-close-icon').toggle();
     });
     $('.nav-link').on('click', function(){
-        $('.navbar-toggler').trigger('click');
+        if (window.matchMedia('(max-width: 975px)').matches) {
+            $('.navbar-toggler').trigger('click');
+        }
     })
 
     // Bind to scroll
