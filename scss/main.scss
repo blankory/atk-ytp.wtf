@@ -88,12 +88,6 @@ h1 {
 .mb-6 {
 	margin-bottom: 5rem;
 }
-#logo {
-	// margin-top: 100px;
-	//max-width: 480px;
-	// margin-right: auto;
-	// margin-left: auto;
-}
 ul {
 	list-style: none;
 }
@@ -178,7 +172,7 @@ ul {
 #liquid-3 {
 	position: absolute;
 	right: 0;
-	top: 5000px;
+	top: 5250px;
 	z-index: -1;
 	height: 700px;
 	width: auto;
@@ -289,12 +283,10 @@ tr {
 th {
 	border: transparent;
 	border-top: transparent 0 solid;
-	// border-top: 1px solid #df6dbf;
 }
 td {
-	border:transparent;// border-bottom: 1px solid #df6dbf;
+	border:transparent;
 	border-top:none !important;
-	// border-top: 1px solid #df6dbf;
 }
 .top-sponsor {
 	max-height: 120px;
@@ -350,6 +342,16 @@ td {
 .mangotext {
 	color: transparent;
 }
+@media screen and (max-width: 1050px) {
+	#liquid-3 {
+		top: 6000px;
+	}
+}
+@media screen and (max-width: 1150px) {
+	#liquid-3 {
+		top: 5750px;
+	}
+}
 @media screen and (max-width: 992px) {
 	.liquid-bg1, .liquid-bg2 {
 		background-image: none;
@@ -359,11 +361,6 @@ td {
 	}
 	#team {
 		font-size: 0.95rem;
-	}
-}
-@media screen and (max-width: 700px) {
-	#logo {
-		// max-width: 75% !important;
 	}
 }
 @media screen and (max-width: 650px) {
