@@ -89,8 +89,10 @@ h1 {
 	margin-bottom: 5rem;
 }
 #logo {
-	margin-top: 100px;
-	max-width: 480px;
+	// margin-top: 100px;
+	//max-width: 480px;
+	margin-right: auto;
+	margin-left: auto;
 }
 ul {
 	list-style: none;
@@ -361,7 +363,7 @@ td {
 }
 @media screen and (max-width: 700px) {
 	#logo {
-		max-width: 75% !important;
+		// max-width: 75% !important;
 	}
 }
 @media screen and (max-width: 650px) {
