@@ -1,70 +1,11 @@
+@keyframes pulse {
+  0% {background-color: #000;}
+  21% {background-color: #111010;}
+  55% {background-color: #2b2a2a;}
+  78% {background-color: #111010;}
+  100% {background-color: #000;}
+}
 
-@-webkit-keyframes AnimationName {
-	0% {
-		background-position: 0% 10%;
-	}
-	50% {
-		background-position: 100% 91%;
-	}
-	100% {
-		background-position: 0% 10%;
-	}
-}
-@-moz-keyframes AnimationName {
-	0% {
-		background-position: 0% 10%;
-	}
-	50% {
-		background-position: 100% 91%;
-	}
-	100% {
-		background-position: 0% 10%;
-	}
-}
-@keyframes AnimationName {
-	0% {
-		background-position: 0% 10%;
-	}
-	50% {
-		background-position: 100% 91%;
-	}
-	100% {
-		background-position: 0% 10%;
-	}
-}
-@-webkit-keyframes darkGradient {
-	0% {
-		background-position: 0% 9%;
-	}
-	50% {
-		background-position: 100% 92%;
-	}
-	100% {
-		background-position: 0% 9%;
-	}
-}
-@-moz-keyframes darkGradient {
-	0% {
-		background-position: 0% 9%;
-	}
-	50% {
-		background-position: 100% 92%;
-	}
-	100% {
-		background-position: 0% 9%;
-	}
-}
-@keyframes darkGradient {
-	0% {
-		background-position: 0% 9%;
-	}
-	50% {
-		background-position: 100% 92%;
-	}
-	100% {
-		background-position: 0% 9%;
-	}
-}
 html {
 	color: #e7e7e7;
 	font-family: 'Montserrat', sans-serif;
@@ -76,11 +17,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2rem;
 	scroll-behavior: smooth;
-	background: linear-gradient(134deg, #000000, #111010, #2b2a2a, #111010, #000000);
-	background-size: 5000% 5000%;
-	-webkit-animation: darkGradient 51s ease infinite;
-	-moz-animation: darkGradient 51s ease infinite;
-	animation: darkGradient 51s ease infinite;
+	height: 100%;
+        // no background-color set, let's use pulse effect instead
+	-webkit-animation: pulse 51s infinite;
+        -moz-animation: pulse 51s infinite;
+        animation: pulse 51s infinite;
+
+	#home img {
+		padding: 2rem;
+	}	
 }
 h1 {
 	margin-bottom: 0.75rem;
@@ -335,6 +280,7 @@ td {
 .k {
 	background: linear-gradient(156deg, #74d6bd, #d6749c, #7d74d6, #6af815, #000000, #00d3fe);
 	background-size: 1200% 1200%;
+	font-family: "Comic Sans MS" !important;
 	-webkit-animation: AnimationName 5s ease infinite;
 	-moz-animation: AnimationName 5s ease infinite;
 	animation: AnimationName 5s ease infinite;
