@@ -1,6 +1,6 @@
-# ATK-YTP Uleåborg 2020
+# ATK-YTP Uleåborg 2020/2021
 
-Event website for ATK-YTP 2021. [Pug](https://github.com/pugjs/pug) template engine is used to build the site from template files to HTML..
+Event website for ATK-YTP 2021. [Pug](https://github.com/pugjs/pug) template engine is used to build the site from template files to HTML.
 
 ## Prerequisites
  - npm
