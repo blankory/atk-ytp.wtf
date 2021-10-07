@@ -42,9 +42,11 @@ nav.navbar.navbar-expand-lg.topnav.p-0.position-fixed.w-100
         a.nav-link(href='#home')
           i.fas.fa-home
       li.nav-item
-        a.nav-link(href='#info') Mikä ATK-YTP?
-      li.nav-item
         a.nav-link(href='#schedule') Aikataulu
+      li.nav-item
+        a.nav-link(href='#events') Tapahtumat
+      li.nav-item
+        a.nav-link(href='#alko') Ruokailu
       li.nav-item
         a.nav-link(href='#accommodation') Majoitus
       li.nav-item
@@ -74,7 +76,7 @@ span.divider
 #schedule.container
   .text-center
     .glitch-wrapper
-      h1.glitch(data-text='Aikatoulu') Aikataulu
+      h2.h1.glitch(data-text='Aikatoulu') Aikataulu
     h3.pb-3 Keskiviikko
   .timetable-container.table-responsive
     table.table.timetable.mb-0
@@ -184,11 +186,56 @@ span.divider
         td 23:00
         td Turku puolivälissä kotimatkaa
 span.divider
+#events.container-fluid
+  .col-sm-9.col-12.mx-auto 
+    .text-center 
+      .glitch-wrapper 
+        h2.mb-3.h1.glitch(data-text='Täbahtvmat') Tapahtumat 
+      div
+          h3.mb-2 Overflow by Solita
+          p 
+            | ATK-yhteistoimintapäivien rankan ensimmäisen seminaaripäivän ja suunnistusiltapäivän päätteeksi on aika palkita itsemme huikeilla iltabileillä, missäpä muuallakaan kuin Oulun omassa Numerossa! Juhlien päätähtenä on Maustetytöt, ja illan aikana meitä viihdyttävät myös paikalliset DJ:t! 
+          p 
+            | 45 Special tunnetaan yhtenä kaupungin legendaarisimmista keikkapaikoista, ja vuosikymmenten aikana “vintin” lavalle onkin noussut lukematon määrä niin kotimaan tähtiä kuin myös ulkomaisia bändejä ja artisteja. 
+          p 
+            | Meininkiä riittää peräti kolmessa eri kerroksessa; keskikerroksesta löydät viihtyisän loungen, kellarissa tanssijalka vipattaa rokkidiskon tahtiin ja yläkerrasta löytyy tietysti paikan kuuluisa esiintymislava. Illan aikana myös ravintolan keittiö on auki, joten tyhjin vatsoin ei iltaa tarvitse viettää.
+          p
+            | Juhlat mahdollistaa seminaaristakin tuttu Solita, joka on näkyvästi vaikuttava teknologia-, data- ja designyritys. Tapahtumapaikalta voit mahdollisesti löytää Solita-aiheisia tuotteita sekä solitalaisia, joita kannattaa ehdottomasti käydä jututtamassa.
+          p   
+            a(target='_blank' href='https://fb.me/e/2yR321Hwt') Overflow by Solita Facebookissa
+      .col-9.mx-auto 
+        span.divider
+      div 
+          h3.nb-2 Algorytmit by Tivia 
+          p 
+            | Ja taas mennään! ATK-YTP:n toisena iltana juhlat jatkuvat Oulun yöelämätaivaan uuden kirkkaan tähden Basso Clubin hellässä huomassa. Tule noutamaan muistoksi upea haalarimerkki ja nauttimaan yhteistoimintapäivät päättävistä huikeista ravimenoista.
+          p
+            | Musiikkilinja poikkeaakin normista tällä kertaa hyvinkin rankasti, nimittäin Algorytmien ilta on pyhitetty konemusiikille! Illan päätähtenä Basson dekkien takana nähdään mm. YleX:n perjantai-illan todellinen suunnannäyttäjä DJ Orion! Lisäksi mukana on paikallisia sankareita Oulun reiviskenestä. Saundeja kuuluu heti kymmenestä aina puoli viiteen asti, joten muista pakata tanssikenkäsi tätä huikeaa iltaa varten.
+          p
+            | Näitä bileitä tukemassa on ATK-YTP:n tämän vuoden pääsponsori TIVIA, joka on Suomen johtava tieto- ja viestintätekniikan alan liitto, johon mm. Blanko ja TiTOL:kin kuuluvat. Tapahtumapaikalta voi tarttua käteen TIVIA-aiheisia tuotteita, kannattaa olla silmä tarkkana!
+          p
+            | Tapahtuma on tarkoitettu ensisijaisesti ATK-YTP -tapahtumaan osallistuville henkilöille. Mikäli tilaa kuitenkin riittää, voi näille jatkoille ostaa lipun ovelta hintaan 10e (sis. narikan). 
+          p 
+            a(target='_blank' href='https://fb.me/e/YYfWKshI') Algorytmit by Tivia Facebookissa
+span.divider
+#alko.container-fluid 
+  .col-sm-9.col-12.mx-auto 
+    .text-center  
+      .glitch-wrapper
+        h2.h1.glitch(data-text='RaokAilv') Ruokailu
+      div 
+        p 
+          | Tapahtuman aikana osallistujien ei tarvitse tuntea nälkää tai janoa. Yliopistolla opiskelijahintaista ruokaa tarjoaa 
+          a(target='_blank' href='https://www.juvenes.fi/foodoo') ravintola Foodoo
+          | , sekä kahvia 
+          a(target='_blank' href='https://www.juvenes.fi/hub') cafe Hub
+          |. Lisäksi Kaijonharjussa ja Linnanmaalla yliopiston läheisyydestä löytyy muitakin ravintoloita ja kauppoja. Lähin Alko sijaitsee kilometrin päässä Linnanmaan Prismalla.
+span.divider
 #accommodation.container-fluid
   .col-sm-9.col-12.mx-auto
     .text-center
       .glitch-wrapper
-        h1.glitch(data-text='Majøitus') Majoitus
+        h2.h1.glitch(data-text='Majøitus') Majoitus
       div
         p
           | Majoitus ulkopaikkakuntalaisille järjestetään Pohjankartanon koululla, osoitteessa 
@@ -201,7 +248,7 @@ span.divider
   .col-sm-9.col-12.mx-auto
     .text-center
       .glitch-wrapper
-        h1.glitch(data-text='Kvljetukset') Kuljetukset
+        h2.h1.glitch(data-text='Kvljetukset') Kuljetukset
       .col-xs-12
         p
           | ATK-YTP -osallistujille ilmaiset bussikuljetukset liikennöivät etkoilta jatkoille molempina iltoina klo 21.30-23.00 välillä. Bussit liikennöivät myös torstaiaamuna majoituksesta Oulun yliopistolle 9.30-11.00 välillä.
@@ -214,7 +261,7 @@ span.divider
   .col-sm-9.col-12.mx-auto
     .text-center
       .glitch-wrapper
-        h1.glitch(data-text='Turvallisenpi tilä') Turvallisempi tila
+        h2.h1.glitch(data-text='Turvallisenpi tilä') Turvallisempi tila
       div
         p
           | Tapahtumassa tulee noudattaa 
@@ -226,7 +273,7 @@ span.divider
     .col-sm-9.col-12.mx-auto
       .text-center
         .glitch-wrapper
-          h1.glitch(data-text='Korona') Korona
+          h2.h1.glitch(data-text='Korona') Korona
         div
           p
             | Ethän saavu tapahtumaan, jos tunnet olosi kipeäksi tai epäilet altistumista.
@@ -241,7 +288,7 @@ span.divider
   .col-sm-9.col-12.mx-auto
     .text-center
       .glitch-wrapper
-        h1.glitch(data-text='Tiimi') Tiimi 
+        h2.h1.glitch(data-text='Tiimi') Tiimi 
     .row.justify-content-center.mb-3
       .row.textal
         .col.textl Aleksi Värttö
@@ -264,7 +311,7 @@ span.divider
 #sponsors.container
   .text-center
     .glitch-wrapper
-      h1.glitch(data-text='Yhteistyossä') Yhteistyössä
+      h2.h1.glitch(data-text='Yhteistyossä') Yhteistyössä
     .row.mb-4
       .col-10.col-md-4.mx-auto
         a(target='_blank' href='https://tivia.fi')
