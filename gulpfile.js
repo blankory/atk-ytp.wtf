@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const { src, dest, watch, task, series } = require('gulp');
 const pug = require('gulp-pug');
 var sass = require('gulp-sass')(require('sass'));
+var replace = require('gulp-replace');
 
 /**
   Monitors changes of files in codebase.
@@ -17,22 +18,19 @@ task('watch', function(){
 */
 task('pugToHtml', function(){
    return src('./*.pug')
-   .pipe(pug({
+     .pipe(replace(/d\=cachebuster/g, 'd=' + new Date().getTime()))
+     .pipe(pug({
          //options
       }))
-      .pipe(dest('./dist'));
+     .pipe(dest('./dist'));
 });
 
 /**
   Pipes all related tasks for building the project for it's end state.
 */
 task('build', async function(){
-   gulp.src('./*.pug')
-   .pipe(pug({
-         //options
-      }))
-      .pipe(dest('./dist'));
-   generateCss();
+  generateCss();
+  pugToHtml();
 });
 
 /**
@@ -45,3 +43,11 @@ async function generateCss(){
 }
 gulp.task('styles', generateCss);
 
+async function pugToHtml(){
+   return src('./*.pug')
+     .pipe(replace(/d\=cachebuster/g, 'd=' + new Date().getTime()))
+     .pipe(pug({
+         //options
+      }))
+     .pipe(dest('./dist'));
+}
