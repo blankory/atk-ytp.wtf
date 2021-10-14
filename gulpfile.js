@@ -14,7 +14,7 @@ task('watch', function(){
 
 /**
   Converts files with Pug syntax to HTML format.
-*/.
+*/
 task('pugToHtml', function(){
    return src('./*.pug')
    .pipe(pug({
