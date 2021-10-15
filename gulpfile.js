@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const { src, dest, watch, task, series } = require('gulp');
 const pug = require('gulp-pug');
+const autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass')(require('sass'));
 var replace = require('gulp-replace');
 
@@ -9,20 +10,8 @@ var replace = require('gulp-replace');
   Triggers related tasks when certain files are being edited, see functions below.
 */
 task('watch', function(){
-   watch('./*.pug', series('pugToHtml'));
-   watch('./scss/**/*.scss', series('styles'));
-});
-
-/**
-  Converts files with Pug syntax to HTML format.
-*/
-task('pugToHtml', function(){
-   return src('./*.pug')
-     .pipe(replace(/d\=cachebuster/g, 'd=' + new Date().getTime()))
-     .pipe(pug({
-         //options
-      }))
-     .pipe(dest('./dist'));
+   watch('./*.pug', series('build'));
+   watch('./scss/**/*.scss', series('build'));
 });
 
 /**
@@ -39,6 +28,7 @@ task('build', async function(){
 async function generateCss(){
     gulp.src('./scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./dist/css/'));
 }
 gulp.task('styles', generateCss);
