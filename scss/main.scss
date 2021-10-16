@@ -27,6 +27,9 @@ body {
 		padding: 2rem;
 	}	
 }
+#logo {
+	width: 800px;
+}
 h1 {
 	margin-bottom: 0.75rem;
 }
@@ -117,7 +120,7 @@ ul {
 #liquid-3 {
 	position: absolute;
 	right: 0;
-	top: 5400px;
+	top: 0;
 	z-index: -1;
 	height: 700px;
 	width: auto;
@@ -291,21 +294,6 @@ td {
 #siili {
 	max-height: 175px;
 	width: auto;
-}
-@media screen and (max-width: 1050px) {
-	#liquid-3 {
-		top: 6000px;
-	}
-}
-@media screen and (max-width: 1150px) {
-	#liquid-3 {
-		top: 5750px;
-	}
-}
-@media screen and (max-width: 1300px) {
-	#liquid-3 {
-		top: 5500px;
-	}
 }
 @media screen and (max-width: 992px) {
 	.liquid-bg1, .liquid-bg2 {
