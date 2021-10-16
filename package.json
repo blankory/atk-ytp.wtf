@@ -5,10 +5,12 @@
   "main": "gulpfile.js",
   "dependencies": {
     "gulp-pug": "^5.0.0",
+    "gulp-replace": "^1.1.3",
     "gulp-watch": "^5.0.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "sass": "^1.35.1"
   },
